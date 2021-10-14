@@ -14,14 +14,14 @@ export default function Home() {
 
   return (
     <>
+
     <Head>
-        <title>Truco | Login</title>
+        <title>Truco | Home </title>
     </Head>
 
-  <form className="container">
-    <Login />
-  </form>
-    
-    </>
+        <div class="container">
+            <Link href="/Modos"><button>Jogar</button></Link>
+        </div>
+        </>
   )
 }

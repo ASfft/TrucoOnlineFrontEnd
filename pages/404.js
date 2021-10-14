@@ -15,7 +15,7 @@ const NotFound = () => {
             <img class="center" src="/gatinho.png"/>
         <div class="not-found">
             <p>Essa pagina não existe</p>
-            <p><Link href="/"><a>Homepage</a></Link></p>
+            <p><Link href="/Homepage"><a>Homepage</a></Link></p>
         </div>
     </div>
 

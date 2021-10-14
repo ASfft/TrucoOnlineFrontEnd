@@ -69,6 +69,10 @@ nav {
   margin: 5px 0;
 }
 
+.container li {
+  margin: 15px 0;
+}
+
 
 .logo {
   cursor: default;
@@ -145,4 +149,81 @@ button:hover {
 
 .login {
   display: flex;
+}
+
+.gametable {
+  background: #195d5f;
+  width: 1000px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+
+.cards{
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 370px;
+  height: 22.5%;
+}
+
+.hiscards {
+  height: 100px;
+  display: flex;
+  margin-bottom: auto;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.yourcards {
+  height: 100px;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.cards button {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.cards div{
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.plays {
+  height: 100px;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logomesa {
+  height: 10%;
+  background: transparent;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.logomesa a{
+  background: transparent;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
 }

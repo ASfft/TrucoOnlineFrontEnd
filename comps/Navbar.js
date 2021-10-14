@@ -7,7 +7,7 @@ const Navbar = () => {
         <h1>Truco Omline</h1>
     </div>
     
-    <ul class="links">
+    <ul className="links">
       <li><Link href="/Homepage"><a><button>Home</button></a></Link></li>
       <li><Link href="/Sobre"><a><button>Sobre</button></a></Link></li>
       <li><Link href="/Perfil"><a><button>Perfil</button></a></Link></li>
