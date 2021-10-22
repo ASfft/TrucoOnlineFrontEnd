@@ -9,7 +9,7 @@ export default function Modos() {
         <title>Truco | Modos </title>
     </Head>
 
-        <div class="container">
+        <div className="container">
             <ul>
             <li><Link href="/IA"><button>Contra IA</button></Link></li>
             <li><Link href="/Multyplayer"><button>Multiplayer</button></Link></li>

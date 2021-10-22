@@ -12,10 +12,10 @@ const NotFound = () => {
 
     <div class="not-found-margin">
 
-            <img class="center" src="/gatinho.png"/>
-        <div class="not-found">
+            <img className="center" src="/gatinho.png"/>
+        <div className="not-found">
             <p>Essa pagina não existe</p>
-            <p><Link href="/Homepage"><a>Homepage</a></Link></p>
+            <p><Link href="/"><a>Homepage</a></Link></p>
         </div>
     </div>
 

@@ -7,7 +7,7 @@ const Sobre = () => {
         <title>Truco | Sobre</title>
     </Head>
 
-        <div class="container">
+        <div className="container">
             <p>oi</p>
         </div>
     </>

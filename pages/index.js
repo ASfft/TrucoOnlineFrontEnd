@@ -19,7 +19,7 @@ export default function Home() {
         <title>Truco | Home </title>
     </Head>
 
-        <div class="container">
+        <div className="container">
             <Link href="/Modos"><button>Jogar</button></Link>
         </div>
         </>
