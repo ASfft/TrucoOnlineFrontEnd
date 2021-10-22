@@ -157,7 +157,7 @@ button:hover {
   height: 500px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .cards{
@@ -226,4 +226,26 @@ button:hover {
   display: flex;
   margin-right: auto;
   margin-left: auto;
+}
+
+.pontos {
+  color: aliceblue;
+  display: flex;
+  margin-top: 1em;
+}
+
+.pontos h3 {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sobre {
+  display: flex;
+  margin: 10px 10px;
+}
+
+.sobre p{
+  display: flex;
+  margin-top: 10px;
 }

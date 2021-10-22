@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Link from "next/Link";
-import id from '../comps/Login'
 
 export const getStaticProps = async () => {
 

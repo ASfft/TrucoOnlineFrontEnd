@@ -5,7 +5,6 @@ import Navbar from '../comps/Navbar'
 import styles from '../styles/Home.module.css'
 import Link from "next/link";
 import { useEffect, useState } from 'react'
-import Login from '../comps/Login'
 
 
 export default function Home() {

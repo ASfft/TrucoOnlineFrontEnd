@@ -40,14 +40,23 @@ const IA = () => {
 
             setYourLastPlay([]);
 
-            setDisableYourCards(true);
-            setDisableHisCards(false)
+            setDisableYourCards(true);        
 
             var removeArr1 = [...yourCards].filter(carta => carta[1] !== cardIndex)
             setYourCards(removeArr1);
 
             var removeArr2 = [...yourCards].filter(carta => carta[1] == cardIndex)
             setYourLastPlay(removeArr2.join().slice(0,-2));
+
+            if (whoStarts == "he"){
+                setTimeout(() => {
+                    setYourLastPlay([]);
+                    setHisLastPlay([]);
+                    setDisableHisCards(false);
+                }, 2000);
+            } else {
+                setDisableHisCards(false);
+            }
 
             if (yourCards.length == 1 && whoStarts == "he") {
                 setTimeout(() => {
@@ -63,13 +72,22 @@ const IA = () => {
 
             setHisLastPlay([])
             setDisableHisCards(true);
-            setDisableYourCards(false)
 
             var removeArr3 = [...hisCards].filter(carta => carta[1] !== cardIndex)
             setHisCards(removeArr3);
 
             var removeArr4 = [...hisCards].filter(carta => carta[1] == cardIndex)
             setHisLastPlay(removeArr4.join().slice(0,-2));
+
+            if (whoStarts == "you"){
+                setTimeout(() => {
+                    setYourLastPlay([]);
+                    setHisLastPlay([]);
+                    setDisableYourCards(false)
+                }, 2000);
+            } else {
+                setDisableYourCards(false)
+            }
 
             if (hisCards.length == 1 && whoStarts == "you") {
                 setTimeout(() => {
