@@ -1,16 +1,251 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #24252A;
+}
+
+li{
+  list-style-type: none;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 15px;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 2em;
+  color: aliceblue;
+  border-top: thick double grey;
+}
+
+h1 {
+  background-color: #24252A;
+  color: aliceblue;
+}
+
+a,li, p, button, label {
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 16px;
+  color: aliceblue;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 10%;
+  border-bottom:thick double rgba(17,75,77,1);
+  
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2em;
+  list-style-type: none;
+}
+
+.container button {
+  margin-left: 40px;
+  font-size: 30px;
+}
+
+.container div {
+  margin: 5px 0;
+}
+
+.container li {
+  margin: 15px 0;
+}
+
+
+.logo {
+  cursor: default;
+  margin-right: auto;
+}
+
+.links{
+  list-style-type: none;
+  background-color: #24252A;
+}
+
+.links li {
+  display: inline-block;
+}
+
+button {
+  display: inline-block;
+  padding: 9px 25px;
+  background-color: #114b4d ;
+  border: none;
+  border-radius: 50px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: #25a2a6;
+}
+
+.not-found {
+  text-align: center;
+  margin-top: 2em;
+}
+.not-found a{
+  color: #4979ff;
+  text-decoration: underline;
+}
+
+.center {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.not-found-margin {
+  margin-top: 2em;
+}
+
+.jogador{
+  display: flex;
+  margin-left: 2em;
+  }
+
+.jogador h1{
+  color: aliceblue;
+  background-color: transparent;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.jogador p{
+  color: aliceblue;
+  background-color: transparent;
+  padding: 5px 0;
+  display: flex;
+  margin-left: 2em;
+
+}
+
+.jogador li{
+  list-style-type: square;
+}
+
+.login {
+  display: flex;
+}
+
+.gametable {
+  background: #195d5f;
+  width: 1000px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+}
+
+.cards{
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 370px;
+  height: 22.5%;
+}
+
+.player1cards {
+  height: 100px;
+  display: flex;
+  margin-bottom: auto;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.player2cards {
+  height: 100px;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.cards button {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.cards div{
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.plays {
+  height: 100px;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logomesa {
+  height: 10%;
+  background: transparent;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.logomesa a{
+  background: transparent;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pontos {
+  color: aliceblue;
+  display: flex;
+  margin-top: 1em;
+}
+
+.pontos h3 {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sobre {
+  display: flex;
+  margin: 10px 10px;
+}
+
+.sobre p{
+  display: flex;
+  margin-top: 10px;
 }
