@@ -217,27 +217,42 @@ button:hover {
   height: 10%;
   background: transparent;
   display: flex;
-  margin-right: auto;
-  margin-left: auto;
+  justify-content: space-around;
 }
 
 .logomesa a{
   background: transparent;
-  display: flex;
-  margin-right: auto;
-  margin-left: auto;
+  margin-top: 2.5px;
 }
 
-.pontos {
+.roundPoints {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0px 5px;
+}
+
+.JfvckAn{
+  background: transparent;
+  display: flex;
+  justify-content: space-around;
+}
+
+playerinfo {
   color: aliceblue;
   display: flex;
   margin-top: 1em;
+  margin-left: 40%;
+  margin-right: 40%;
+  justify-content: space-around;
 }
 
-.pontos h3 {
+.playerinfo h3 {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-content: center;
 }
 
 .sobre {
