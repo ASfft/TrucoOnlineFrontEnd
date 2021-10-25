@@ -1,4 +1,3 @@
-import axios from "axios";
 import API from "./APIHelper";
 
 export default class IAAPI {

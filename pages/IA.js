@@ -24,6 +24,29 @@ const IA = () => {
     const [gameFinished, setGameFinished] = useState(false);
     const [roundValue, setRoundValue] = useState(2);
     const [gameId, setGameID] = useState(1)
+    const [colors,setColors] = useState(["#ddd", "#ddd", "#ddd", "#ddd"])
+
+    useEffect(() => {
+        console.log(player2RoundPoints)
+        let newColors = [...colors]
+        if (player1RoundPoints === 0){
+            newColors[0] = "#ddd"
+            newColors[1] = "#ddd"
+        } else if (player1RoundPoints === 1) {
+            newColors[0] = "blue"
+        } else if (player1RoundPoints === 2) {
+            newColors[1] = "blue"
+        }
+        if (player2RoundPoints === 0) {
+            newColors[2] = "#ddd"
+            newColors[3] = "#ddd"
+        } else if (player2RoundPoints === 1){
+            newColors[2] = "blue"
+        } else if (player2RoundPoints ===2) {
+            newColors[3] = "blue"
+        }
+        setColors(newColors)
+        },[player1RoundPoints, player2RoundPoints])
 
     useEffect(() => {
         if (gameFinished) {
@@ -130,7 +153,9 @@ const IA = () => {
             <div className="cards">
             {player2Cards.map((card, index) =>
                 <div key={index}>
-                     <button disabled={true} onClick={() => playCard(player2Cards[index])} ><img className="player2cards" src={translateAPICardToImg(card)} /></button>
+                     <button disabled={true} onClick={() => playCard(player2Cards[index])}>
+                         <img className="player2cards" src={"/cartas/FlippedCard.png"} alt=""/>
+                     </button>
                 </div>
                 )}
             </div>
@@ -142,16 +167,16 @@ const IA = () => {
                     <a>
                         Player 2
                     </a>
-                    <span className="roundPoints" style={{backgroundColor: "#bbb"}} ></span>
-                    <span className="roundPoints" style={{backgroundColor: "#bbb"}} ></span>
+                    <span className="roundPoints" style={{backgroundColor: colors[2]}}/>
+                    <span className="roundPoints" style={{backgroundColor: colors[3]}}/>
                 </div>
                     <a>༼ つ ◕_◕ ༽つ</a>
                 <div className="JfvckAn">
                     <a>
                         Player 1
                     </a>
-                    <span className="roundPoints" style={{backgroundColor: "#bbb"}} ></span>
-                    <span className="roundPoints" style={{backgroundColor: "#bbb"}} ></span>
+                    <span className="roundPoints" style={{backgroundColor: colors[0]}}/>
+                    <span className="roundPoints" style={{backgroundColor: colors[1]}}/>
                 </div>
             </div>
             <div className="cards">
@@ -160,7 +185,9 @@ const IA = () => {
             <div className="cards">
                 {player1Cards.map((card, index) =>
                 <div key={index}>
-                    <button disabled={turn !== "player1"} onClick={() => playCard(player1Cards[index])} ><img className="player1cards" src={translateAPICardToImg(card)} /></button>
+                    <button disabled={turn !== "player1"} onClick={() => playCard(player1Cards[index])} >
+                        <img className="player1cards" src={translateAPICardToImg(card)} alt=""/>
+                    </button>
                 </div>
                 )}
             </div>

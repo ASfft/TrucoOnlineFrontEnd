@@ -168,7 +168,7 @@ button:hover {
   height: 22.5%;
 }
 
-.player1cards {
+.player2cards {
   height: 100px;
   display: flex;
   margin-bottom: auto;
@@ -176,7 +176,7 @@ button:hover {
   cursor: pointer;
 }
 
-.player2cards {
+.player1cards {
   height: 100px;
   display: flex;
   margin-top: auto;
@@ -207,10 +207,7 @@ button:hover {
 .plays {
   height: 100px;
   display: flex;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
 .logomesa {
